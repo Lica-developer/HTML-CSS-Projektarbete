@@ -20,34 +20,22 @@
             <h3>
                 Ny produkt
             </h3>
-            <form action="new.php" method="post">
-            <p>
-                Namn
-            </p>
-            <input type="text" placeholder="">
+            <form action="new.php" method="post" enctype="multipart/form-data">
+                
+            <label for="name">Namn</label>
+            <input type="text" id="name" name="name" placeholder="">
 
-            <p>
-                Beskrivning
-            </p>
-            <div class="textarea">
-                <textarea placeholder="" rows="4" cols="50"></textarea>
-            </div>
+            <label for="textarea">Beskrivning</label>
+            <textarea placeholder="" id="textarea" name="textarea" rows="4" cols="50"></textarea>
 
-            <p>
-                Bild
-            </p>
-            <label for="file-upload" class="custom-file-upload"></label>
+            <label for="file-upload" class="custom-file-upload">Bild</label>
             <input type="file" id="file-upload">
 
-            <p>
-                SKU
-            </p>
-            <input type="text" placeholder="">
+            <label for="text">SKU</label>
+            <input type="text" id="text" name="SKU" placeholder="">
 
-            <p>
-                Pris
-            </p>
-            <input type="number" placeholder="" min="0">
+            <label for="number">Pris</label>
+            <input type="number" id="number" name="number" placeholder="" min="0">
 
             <br>
 
