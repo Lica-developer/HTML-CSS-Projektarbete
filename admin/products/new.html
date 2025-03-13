@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration</title>
+</head>
+<body>
+    <header>
+        <h1>Administration</h1>
+    </header>
+    <main>
+        <aside>
+            <h2>
+                Produkter
+            </h2>
+        </aside>
+
+        <section>
+            <h3>
+                Ny produkt
+            </h3>
+            <form action="new.php" method="post">
+            <p>
+                Namn
+            </p>
+            <input type="text" placeholder="">
+
+            <p>
+                Beskrivning
+            </p>
+            <div class="textarea">
+                <textarea placeholder="" rows="4" cols="50"></textarea>
+            </div>
+
+            <p>
+                Bild
+            </p>
+            <label for="file-upload" class="custom-file-upload"></label>
+            <input type="file" id="file-upload">
+
+            <p>
+                SKU
+            </p>
+            <input type="text" placeholder="">
+
+            <p>
+                Pris
+            </p>
+            <input type="number" placeholder="" min="0">
+
+            <br>
+
+            <button type="submit">
+                Lägg till
+            </button>
+        </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; Freaky Fashion 2025
+        </p>
+    </footer>
+</body>
+</html>
