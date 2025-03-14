@@ -58,18 +58,29 @@ main {
     margin: auto;
 }
 
+.similar-products {
+    display: none;
+}
+
 
 @media (max-width: 640px) {
     body {
         width: 100%;
         margin: 0;
     }
+    .flex-grid {
+        display: block;
+      }
 }
+
 
 @media (min-width: 641px) and (max-width: 1023px) {
     body {
         width: 100%;
         margin: 0;
+    }
+    .similar-products {
+        display: grid;
     }
 }
 
@@ -77,5 +88,17 @@ main {
     body {
         width: 100%;
         margin: 0;
+    }
+    .similar-products {
+        display: grid;
+    }
+    .similar-products-header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .three-products {
+        display: flex;
+        justify-content: space-between;
     }
 }
