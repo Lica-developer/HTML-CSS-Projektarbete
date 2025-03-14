@@ -26,8 +26,16 @@ header {
         width: 100%;
         display: block;
     }
-    nav {
-        /*fixa den senare, fattar nada hur nu*/
+    .no-mobile {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
     }
 
     .nav-links {
@@ -35,6 +43,12 @@ header {
         flex-direction: column;
         gap: 5px;
         /*titta till denna senare*/
+    }
+
+    input[type="text"] {
+        background-color: rgb(227, 227, 227);
+        border-radius: 10px;
+        width: 85%;
     }
 
     .search {
@@ -85,11 +99,16 @@ header {
         width: 100%;
         display: block;
     }
-    nav {
+    .no-mobile {
         width: 100%;
         display: flex;
         align-items: center;
     }
+
+    .mobile {
+        display: none;
+    }
+
     .nav-links {
         display: flex;
         justify-content: space-around;
@@ -133,11 +152,16 @@ header {
         gap: 10px;
         display: block;
     }
-    nav {
+    .no-mobile {
         width: 100%;
         display: flex;
         align-items: center;
     }
+
+    .mobile {
+        display: none;
+    }
+
     .nav-links {
         display: flex;
         justify-content: space-around;
