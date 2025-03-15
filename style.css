@@ -41,8 +41,7 @@ header {
     .nav-links {
         display: flex;
         flex-direction: column;
-        gap: 5px;
-        /*titta till denna senare*/
+        gap: 7px;
     }
 
     input[type="text"] {
@@ -53,9 +52,9 @@ header {
 
     .search {
         display: flex;
-        justify-content: space-between;
-        /*titta till denna senare*/
+        justify-content: space-evenly;
     }
+
 
     .hero {
         display: flex;
@@ -69,8 +68,38 @@ header {
         margin: 10px;      
     }
 
-    .add {
-        background-color: rgb(171, 171, 171);
+    .product {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        padding: 5px;
+        margin: 0;
+    }
+
+    .benefits {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .benefits > div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .benefits img {
+        width: 50px;
+        height: 40px;
+        object-fit: contain;
+    }
+
+    
+
+    #add {
+        background-color: rgb(209, 209, 209);
         display: block;
         width: 100%;
         max-width: 600px;

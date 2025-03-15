@@ -8,9 +8,9 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="no-mobile">
         <div class="imgAndLinks">
-        <img src="https://www.earlyword.com/wp-content/uploads/2009/09/blank_400x1001.gif" alt="Logo" width="300">
+        <img src="logo.png" alt="Logo" width="300">
 
         <div class="nav-links">
             <a href="#">Nyheter</a>
@@ -18,7 +18,7 @@
             <a href="#">Kvinnor</a>        
             <a href="#">Män</a>
         </div>
-    </div>
+        </div>
 
         <div class="search">
             <input type="text" placeholder="Sök produkt">
@@ -29,8 +29,29 @@
         </div>
         </nav>
 
-</header>
 
+        <nav class="mobile">
+            <div class="imgAndLinks">
+            <img src="logo.png" alt="Logo" width="300">
+    
+            <div class="search">
+                <input type="text" placeholder="Sök produkt">
+                <div class="links">
+                <a href="#">❤️</a>
+                <a href="#">🛒</a>
+            </div>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#">Nyheter</a>
+                <a href="#">Bästsäljare</a>
+                <a href="#">Kvinnor</a>        
+                <a href="#">Män</a>
+            </div>
+            </div>
+            </nav>
+
+</header>
     <main>
 
         <article class="products">
@@ -42,7 +63,7 @@
                     <p><strong>199 SEK</strong></p>
                 </article>
 
-                <button class="add">Lägg i varukorg</button>
+                <button id="add">Lägg i varukorg</button>
 
                 <section class="similar-products">
                     <div class="similar-products-header">
@@ -74,19 +95,31 @@
                 </section>
 
                 <section class="benefits">
-                                <h4>
-                                    Gratis frakt och returer
-                                </h4>
-                                <h4>
-                                    Expressfrakt
-                                </h4>
-                                <h4>
-                                    Säkra Betalningar
-                                </h4>
-                                <h4>
-                                    Nyheter varje dag
-                                </h4>
-                </section>
+                    <div>
+                    <img src="icon-earth.png" alt="Free shipping and return">        
+                        <h3>
+                            Gratis frakt och returer
+                        </h3>
+                    </div>
+                    <div>
+                        <img src="icon-flight.jpg" alt="Express">
+                        <h3>
+                            Expressfrakt
+                        </h3>
+                    </div>
+                    <div>
+                        <img src="icon-safepayment.png" alt="Safe payment">
+                        <h3>
+                            Säkra Betalningar
+                        </h3>
+                    </div>
+                    <div>
+                        <img src="icon-happy.png" alt="News everyday">
+                        <h3>
+                            Nyheter varje dag
+                        </h3>
+                    </div>
+        </section>
 
 
                 
