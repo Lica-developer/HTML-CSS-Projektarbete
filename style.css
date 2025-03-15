@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -7,65 +11,67 @@ header {
     background-color: rgb(219, 219, 219);
 }
 
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 5px;
+
+}
+
+.imgAndLinks {
+    display: grid;
+    padding: 20px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-evenly;        
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+input[type="text"] {
+    background-color: rgb(227, 227, 227);
+    border-radius: 10px;
+    width: 85%;
+}
+
+
+.hero {
+    padding: 10px;
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.similar-products {
+    display: none;
+}
+
 
 @media (max-width: 640px) {
-    body {
-        width: 100%;
-        margin: 0;
-        padding: 10px;
-    }
-    .flex-grid {
-        display: block;
-      }
-      .imgAndLinks {
-        display: grid;
-        padding: 20px;
-    }
-    img {
-        padding: 5px;
-        width: 100%;
-        display: block;
-    }
     .no-mobile {
         display: none;
     }
 
     .mobile {
         display: flex;
-        width: 100%;
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-    }
-
-    input[type="text"] {
-        background-color: rgb(227, 227, 227);
-        border-radius: 10px;
-        width: 85%;
-    }
-
-    .search {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-
-    .hero {
-        display: flex;
-        flex-direction: column-reverse;
-        text-align: center;
     }
 
     .name-price {
         display: flex;
         justify-content: space-between;
-        margin: 10px;      
+        margin: 10px; 
     }
 
     .product {
@@ -110,24 +116,12 @@ header {
     .product p {
         margin-left: 10px;
     }
-    
-.similar-products {
-    display: none;
-}
 
 }
 
 
 @media (min-width: 641px) and (max-width: 1023px) {
-    .imgAndLinks {
-        display: grid;
-        padding: 20px;
-    }
-    img {
-        padding: 5px;
-        width: 100%;
-        display: block;
-    }
+
     .no-mobile {
         width: 100%;
         display: flex;
@@ -140,24 +134,15 @@ header {
 
     .nav-links {
         display: flex;
-        justify-content: space-around;
+        flex-direction: row;
         gap: 10px;
-    }
-    .search {
-        padding: 10px;
-        width: 1200px;
-        display: flex;
-        justify-content: space-between;
-    }
-    .hero {
-        display: flex;
-        flex-direction: column-reverse;
-        text-align: center;
     }
     
     .similar-products {
         display: grid;
     }
+
+    
     .similar-products-header {
         display: flex;
         align-items: center;
@@ -168,19 +153,26 @@ header {
         justify-content: space-between;
         
     }
+    .benefits {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .benefits > div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+        .benefits img {
+        width: 50px;
+        height: 40px;
+        object-fit: contain;
+    }
 }
 
 @media (min-width: 1024px) {
-    .imgAndLinks {
-        display: grid;
-        padding: 20px;
-    }
-    img {
-        padding: 5px;
-        width: 100%;
-        gap: 10px;
-        display: block;
-    }
+
     .no-mobile {
         width: 100%;
         display: flex;
@@ -193,17 +185,18 @@ header {
 
     .nav-links {
         display: flex;
-        justify-content: space-around;
+        flex-direction: row;
         gap: 10px;
     }
     .search {
         padding: 10px;
-        width: 1200px;
+        max-width: 1200px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
     .hero {
-        border: 1px solid black;
+
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: flex-start;
@@ -224,5 +217,20 @@ header {
     .three-products {
         display: flex;
         justify-content: space-between;
+    }
+    .benefits {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    .benefits > div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+        .benefits img {
+        width: 50px;
+        height: 40px;
+        object-fit: contain;
     }
 }
