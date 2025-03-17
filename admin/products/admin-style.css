@@ -1,7 +1,6 @@
 body {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;    
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -22,7 +21,7 @@ aside {
     background-color: rgb(220, 220, 220);  
     font-size: 12px;  
     padding: 20px;
-    width: 20vw;
+    min-height: 100vh;
 }
 
 section {
@@ -37,6 +36,10 @@ form {
     flex-direction: column;
     gap: 20px;
     padding: 10px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
 }
 
 footer {
