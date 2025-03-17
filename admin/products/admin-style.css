@@ -29,18 +29,19 @@ section {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    padding: 20px;
+    padding: 15px;
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 15px;
+    padding: 10px;
 }
 
 footer {
     display: flex;
+    padding: 10px;
     border: 1px solid black;
     justify-content: center;
 }
