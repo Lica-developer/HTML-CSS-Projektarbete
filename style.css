@@ -1,5 +1,8 @@
-* {
-    box-sizing: border-box;
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    padding: 0;
 }
 
 a {
@@ -9,6 +12,11 @@ a {
 
 header {
     background-color: rgb(219, 219, 219);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -58,66 +66,80 @@ input[type="text"] {
     display: none;
 }
 
-
-@media (max-width: 640px) {
-    .no-mobile {
-        display: none;
-    }
-
-    .mobile {
-        display: flex;
-    }
-
-    .name-price {
-        display: flex;
-        justify-content: space-between;
-        margin: 10px; 
-    }
-
-    .product {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        padding: 5px;
-        margin: 0;
-    }
-
-    .benefits {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        padding: 10px;
-        margin: 10px;
-    }
-
-    .benefits > div {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .benefits img {
-        width: 50px;
-        height: 40px;
-        object-fit: contain;
-    }
-
-    
-
-    #add {
-        background-color: rgb(209, 209, 209);
-        display: block;
-        width: 100%;
-        max-width: 600px;
-        padding: 10px;
-        border-radius: 10px;
-    }
-
-    .product p {
-        margin-left: 10px;
-    }
-
+.name-price {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px; 
 }
+
+.product {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 5px;
+    margin: 0;
+}
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.benefits > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.benefits img {
+    width: 50px;
+    height: 40px;
+    object-fit: contain;
+}
+#add {
+    background-color: rgb(209, 209, 209);
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.product p {
+    margin-left: 10px;
+}
+
+.nav-footer {
+    background-color: rgb(213, 213, 213);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.nav-footer h4 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    background-color: rgb(213, 213, 213);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+
 
 
 @media (min-width: 641px) and (max-width: 1023px) {
@@ -234,3 +256,11 @@ input[type="text"] {
         object-fit: contain;
     }
 }
+
+/*
+att göra:
+surfplatta - gör liknande produkter grid 2x4 i 
+
+i datorläge - lägg dit spots första sidan och liknande produkter 4x2
+
+*/
