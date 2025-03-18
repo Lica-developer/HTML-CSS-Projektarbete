@@ -14,8 +14,8 @@ a {
 header {
     background-color: rgb(219, 219, 219);
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 main {
@@ -33,18 +33,20 @@ img {
 
 }
 
-.imgAndLinks {
+.imgAndSearch {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
     padding: 10px;
     margin: 0;
 }
 
-.nav-links {
+nav {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    padding: 10px;
+    gap: 10px;
 }
 
 .search {
@@ -147,21 +149,28 @@ footer p {
 
 @media (min-width: 641px) and (max-width: 1023px) {
 
-    .no-mobile {
-        width: 100%;
+    .imgAndSearch {
         display: flex;
+        flex-direction: row;
+    }
+
+    .search {
+        display: flex;
+        justify-content: center;
         align-items: center;
+    }   
+
+    .links {
+        display: flex;
     }
 
-    .mobile {
-        display: none;
-    }
-
-    .nav-links {
+    nav {
         display: flex;
         flex-direction: row;
         gap: 10px;
     }
+
+    /*fortsätt här*/
     
     .similar-products {
         display: grid;
@@ -197,16 +206,6 @@ footer p {
 }
 
 @media (min-width: 1024px) {
-
-    .no-mobile {
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
-
-    .mobile {
-        display: none;
-    }
 
     .nav-links {
         display: flex;
