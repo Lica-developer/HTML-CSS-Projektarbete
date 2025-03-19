@@ -179,6 +179,13 @@ footer p {
     }
 
 
+    /*fixa denna sen, så alla ska vara på sin plats sen*/
+    .tshirt-article {
+        background-color: ;
+
+        display: flex;
+    }
+
     .similar-products {
         display: grid;
         padding: 10px;
@@ -204,12 +211,25 @@ footer p {
         width: 50px;
         height: 40px;
     }
-}
 
-/*gör mina sidor och shoppning till två egna rad*/
-.nav-footer {
-    display: grid;
-    /*fortsätt mer här sen*/
+    .footer-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .footer-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-footer {
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+    }
+    
 }
 
 @media (min-width: 1024px) {
