@@ -138,6 +138,10 @@ footer p {
     padding: 20px;
 }
 
+.products {
+    padding: 15px;
+}
+
 #add {
     background-color: rgb(209, 209, 209);
     width: 100%;
@@ -145,9 +149,8 @@ footer p {
     border-radius: 10px;
 }
 
-/*fortsätt kolla nedåt*/
 
-@media (min-width: 641px) and (max-width: 1023px) {
+@media (min-width: 641px) {
 
     .imgAndSearch {
         display: flex;
@@ -170,93 +173,74 @@ footer p {
         gap: 10px;
     }
 
-    /*fortsätt här*/
-    
-    .similar-products {
+    .product-container {
         display: grid;
+        grid-template-columns: repeat(2, 2fr);
     }
 
+
+    .similar-products {
+        display: grid;
+        padding: 10px;
+    }
     
     .similar-products-header {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        text-align: center;
     }
+
     .three-products {
         display: flex;
         justify-content: space-between;
-        
+        gap: 10px; 
     }
+
     .benefits {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 
-    .benefits > div {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-        .benefits img {
+    .benefits img {
         width: 50px;
         height: 40px;
-        object-fit: contain;
     }
+}
+
+/*gör mina sidor och shoppning till två egna rad*/
+.nav-footer {
+    display: grid;
+    /*fortsätt mer här sen*/
 }
 
 @media (min-width: 1024px) {
 
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    }
-    .search {
-        padding: 10px;
-        max-width: 1200px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
     .hero {
-
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: flex-start;
         text-align: center;
         padding: 10px;
-        max-width: 1200px;
-        margin: auto;
+        width: 100%;
     }
-    
-    .similar-products {
+
+    /*lägg in 3 spot i HTML sen här*/
+
+    .product-container {
         display: grid;
+        grid-template-columns: repeat(4, 2fr);
     }
-    .similar-products-header {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .three-products {
-        display: flex;
-        justify-content: space-between;
-    }
+
+
+    /*fixa artikeln mindre till vänster*/
+    
+
     .benefits {
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         gap: 20px;
     }
-    .benefits > div {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-        .benefits img {
-        width: 50px;
-        height: 40px;
-        object-fit: contain;
-    }
+
 }
 
 /*
