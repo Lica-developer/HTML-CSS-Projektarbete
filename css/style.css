@@ -4,6 +4,7 @@ body {
     justify-content: center;
     padding: 0;
     margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a {
@@ -183,11 +184,25 @@ footer p {
         grid-template-columns: repeat(2, 2fr);
     }
 
+    .tshirt-article img {
+        max-inline-size: 50%;
+    }
 
-    /*fixa denna sen, så alla ska vara på sin plats sen*/
-    .tshirt-article {
-        background-color: red;
-        
+    .products {
+        display: flex;
+    }
+
+    .products div {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    #add {
+    background-color: rgb(209, 209, 209);
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 10px;
     }
 
     .similar-products {
@@ -262,10 +277,6 @@ footer p {
         display: grid;
         grid-template-columns: repeat(4, 2fr);
     }
-
-
-    /*fixa artikeln mindre till vänster*/
-    
 
     .benefits {
         display: flex;
