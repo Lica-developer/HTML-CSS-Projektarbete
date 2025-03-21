@@ -10,6 +10,13 @@ body {
 a {
     text-decoration: none;
     color: black;
+    transition: color 0.3s;
+
+}
+
+#add:focus {
+    background-color: rgb(82, 82, 82);
+    transition: background-color 0.3s;
 }
 
 header {
@@ -150,6 +157,10 @@ footer p {
     border-radius: 10px;
 }
 
+.spots {
+    display: none;
+}
+
 
 @media (min-width: 640px) {
 
@@ -193,16 +204,11 @@ footer p {
     }
 
     .products div {
-        display: flex;
-        flex-direction: column;
         padding: 10px;
     }
     
     #add {
-    background-color: rgb(209, 209, 209);
     max-width: 200px;
-    padding: 10px;
-    border-radius: 10px;
     }
 
     .similar-products {
@@ -253,6 +259,10 @@ footer p {
 
 @media (min-width: 1024px) {
 
+    a:hover {
+        color: rgb(129, 129, 129);
+    }
+
     .search {
         display: flex;
         justify-content: space-between;
@@ -271,11 +281,36 @@ footer p {
         padding: 10px;
     }
 
-    /*lägg in 3 spot i HTML sen här*/
+
+    /*PROBLEM, löser sen*/
+    .spots {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .spot {
+        position: relative;
+    }
+
+    .spot img {
+        width: 100%;
+        display: block;
+    }
+
+    .spot p {
+        position: absolute;
+        bottom: 35%; 
+        left: 50%;
+        transform: translateX(-50%); 
+        font-size: 2vw;
+        text-align: center;
+    }
 
     .product-container {
         display: grid;
-        grid-template-columns: repeat(4, 2fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .benefits {
@@ -284,5 +319,4 @@ footer p {
         justify-content: space-around;
         gap: 20px;
     }
-
 }
