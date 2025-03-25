@@ -5,6 +5,7 @@ body {
     padding: 0;
     margin: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: clamp(1rem, 5vw, 1.5rem);
 }
 
 a {
@@ -188,11 +189,12 @@ footer p {
         width: 60%;
     }   
 
-    .links {
+    .icon-links {
         display: flex;
+        gap: 5px;
     }
 
-    nav {
+    nav ul {
         display: flex;
         flex-direction: row;
         gap: 10px;
@@ -306,12 +308,11 @@ footer p {
 
     .spot p {
         position: absolute;
-        bottom: 35%; 
+        top: 40%;
         left: 50%;
-        transform: translateX(-50%); 
+        transform: translate(-50%, -50%); 
         font-size: 2vw;
-        text-align: center;
-    }
+     }
 
     .product-container {
         display: grid;
