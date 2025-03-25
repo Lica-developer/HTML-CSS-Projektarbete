@@ -20,7 +20,7 @@ a {
 }
 
 header {
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(201, 201, 201);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,7 +53,7 @@ img {
 nav {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 15px;
     gap: 10px;
 }
 
@@ -96,25 +96,16 @@ input[type="text"] {
     margin: 0;
 }
 
-.benefits {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.icon-benefits {
     padding: 10px;
 }
 
 .benefits > div {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
 }
-
-.benefits img {
-    width: 50px;
-    height: 40px;
-    object-fit: contain;
-}
-
 
 .product p {
     margin-left: 10px;
@@ -236,15 +227,13 @@ footer p {
         gap: 10px; 
     }
 
-    .benefits {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+    .icon-benefits {
+        padding: 10px;
     }
 
-    .benefits img {
-        width: 50px;
-        height: 40px;
+    .benefits > div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .footer-1 {
@@ -263,6 +252,11 @@ footer p {
         display: flex;
         flex-direction: row;
         padding: 30px;
+    }
+
+    .nav-footer ul {
+        display: flex;
+        flex-direction: column;
     }
 
     footer {
@@ -319,10 +313,13 @@ footer p {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .benefits {
+    .icon-benefits {
+        padding: 10px;
+    }
+
+    .benefits > div {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        gap: 20px;
     }
 }
