@@ -5,7 +5,7 @@ body {
     padding: 0;
     margin: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: clamp(1rem, 5vw, 1.5rem);
+    font-size: clamp(1rem, 5vw, 1rem);
 }
 
 a {
@@ -97,14 +97,16 @@ input[type="text"] {
 }
 
 .icon-benefits {
-    padding: 10px;
-}
-
-.benefits > div {
+    padding: 50px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
+    font-size: 24px;
+}
+
+.icon-box {
+    padding: 15px;
+    gap: 30px;
 }
 
 .product p {
@@ -229,9 +231,9 @@ footer p {
 
     .icon-benefits {
         padding: 10px;
-    }
-
-    .benefits > div {
+        margin: 10px;
+        gap: 20px;
+        font-size: 24px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -315,9 +317,6 @@ footer p {
 
     .icon-benefits {
         padding: 10px;
-    }
-
-    .benefits > div {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
