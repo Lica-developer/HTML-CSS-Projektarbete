@@ -33,9 +33,21 @@ form {
     gap: 20px;
     padding: 20px;
 }
+form textarea {
+    width: 50%;
+}
 
-form input, form textarea, form button {
-    width: 100%;
+
+form input {
+        width: 25%;
+}
+
+form button {
+    width: 15%;
+}
+
+#text, #number {
+    width: 15%;
 }
 
 footer {
