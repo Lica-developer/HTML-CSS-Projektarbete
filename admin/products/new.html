@@ -17,12 +17,12 @@
             </h2>
         </aside>
 
-        <section>
-            <h3>
+        <form action="new.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>
                 Ny produkt
-            </h3>
-            <form action="new.php" method="post" enctype="multipart/form-data">
-                
+            </legend>
+
             <label for="name">Namn</label>
             <input type="text" id="name" name="name" placeholder="">
 
@@ -41,9 +41,8 @@
             <button type="submit">
                 Lägg till
             </button>
+        </fieldset>
         </form>
-
-        </section>
     </main>
 
     <footer>
