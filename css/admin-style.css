@@ -34,8 +34,8 @@ legend {
     margin-left: -2px;
 }
 
-form textarea {
-    width: 50%;
+#description {
+    width: 75%;
 }
 
 
